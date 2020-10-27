@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix=".")
 async def on_ready():
     print("Logged in")
 
-cogs = ["Test", "Fun"]
+cogs = ["Test", "Fun"] # Ide kerüljenek a class nevek
 def add_cogs():
     for cog in cogs:
         eval(f"bot.add_cog({cog}(bot))")
